@@ -1,0 +1,90 @@
+body {
+
+      margin: 0px;
+      background-color: rgb(0, 0, 0);
+}
+
+header {
+
+      background-color: black;
+      color: white;
+
+}
+
+#promote {
+
+      margin-top: 0rem;
+      text-align: center;
+
+}
+
+#title {
+
+      text-align: center;
+      font-family: fancytitle;
+
+      font-size: 6vw;
+
+      margin: 0rem;
+
+}
+hr {
+
+      color: rgb(35, 35, 35);
+      margin: 0px;
+
+}
+
+nav {
+
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+
+}
+
+a {
+
+      text-decoration: none;
+      color: white;
+
+}
+
+.navbar {
+
+      border: 0.2rem solid white;
+      border-radius: 1rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+
+}
+
+.navbar:hover {
+
+      font-family: Arial, Helvetica, sans-serif;
+      border: none;
+      font-weight: bolder;
+
+}
+
+video {
+
+      filter: brightness(50%);
+      width: 100%;
+}
+
+@font-face {
+
+      font-family: fancytitle;
+      src: url(/MISC/modernline.otf);
+
+}
+
+@font-face {
+
+      font-family: fancytext;
+      src: url(/MISC/Kugile_Demo.ttf);
+
+}

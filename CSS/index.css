@@ -22,7 +22,7 @@ header {
 
       text-align: center;
       font-family: fancytitle;
-      font-size: 4rem;
+      font-size: 6vw;
       margin: 0rem;
 
 }
@@ -74,7 +74,7 @@ a {
 
 }
 
-#heroimage{
+video {
 
       width: 100%;
       filter: brightness(50%);
@@ -88,7 +88,11 @@ a {
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 2rem;
+      font-size: 4vw;
+
+      border: 0.2rem solid white;
+      border-radius: 1rem;
+      padding: 0.5rem;
       
       /* 
       border: 0.2rem solid white;
