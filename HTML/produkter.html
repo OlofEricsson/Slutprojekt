@@ -21,15 +21,54 @@
                   <a href="/HTML/produkter.html" class="navbar">Produkter</a>
                   <a href="" class="navbar">Kontakt</a>
                   <a href="" class="navbar">Kundvagn(bild)</a>
+
             </nav>
 
       </header>
 
-      <video autoplay loop muted plays-inline>
+      <main>
 
-            <source src="/MISC/3557f38fa181406eb8eb474a7310a007(1).mp4" type="video/mp4">
+            <section id="sortering">
 
-      </video>
+                  <label class="sorteringcontainer">One
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="sorteringcontainer">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="sorteringcontainer">Three
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="sorteringcontainer">Four
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label> 
+
+            </section>
+
+            <div class="container">
+                  <!-- 20 produktkort -->
+                  <script>
+                      for (let i = 1; i <= 20; i++) {
+                          document.write(`
+                              <div class="card">
+                                  <img src="/MISC/placeholder300.png" alt="Produkt ${i}">
+                                  <h3>Produkt ${i}</h3>
+                                  <p>Beskrivning av produkt ${i}.</p>
+                                  <button>Köp nu</button>
+                              </div>
+                          `);
+                      }
+                  </script>
+              </div>
+
+      </main>
 <body>
       
 </body>
