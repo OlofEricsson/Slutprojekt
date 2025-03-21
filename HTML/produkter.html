@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <link rel="stylesheet" href="/CSS/produkter.css">
+      <script src="/JS/produkter.js"></script>
 </head>
 <body>
       <header>
@@ -20,7 +21,7 @@
                   <a href="/HTML/index.html" class="navbar">Hem</a>
                   <a href="/HTML/produkter.html" class="navbar">Produkter</a>
                   <a href="" class="navbar">Kontakt</a>
-                  <a href="" class="navbar">Kundvagn(bild)</a>
+                  <a href="" class="navbar"><img src="/MISC/pngimg.com - shopping_cart_PNG4.png" id="linkbild"></a>
 
             </nav>
 
@@ -30,30 +31,32 @@
 
             <section id="sortering">
 
-                  <label class="sorteringcontainer">One
+                  <label class="sorteringcontainer">performance
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                       </label>
                       
-                      <label class="sorteringcontainer">Two
+                      <label class="sorteringcontainer">styling
                         <input type="checkbox">
                         <span class="checkmark"></span>
                       </label>
                       
-                      <label class="sorteringcontainer">Three
+                      <label class="sorteringcontainer">kolfiber
                         <input type="checkbox">
                         <span class="checkmark"></span>
                       </label>
                       
-                      <label class="sorteringcontainer">Four
+                      <label class="sorteringcontainer">OEM+
                         <input type="checkbox">
                         <span class="checkmark"></span>
                       </label> 
 
             </section>
 
+            <hr>
+
             <div class="container">
-                  <!-- 20 produktkort -->
+
                   <script>
                       for (let i = 1; i <= 20; i++) {
                           document.write(`
