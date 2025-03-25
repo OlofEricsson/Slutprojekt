@@ -84,6 +84,7 @@ a {
 main {
 
       background-image: url(/MISC/blackmarble.png);
+      display: flex;
 
 }
 
@@ -212,6 +213,10 @@ main {
 }
 .card button:hover {
       background: rgb(218,165,32);
+}
+
+@media  screen and (min-width: 1920px) {
+      
 }
 
 @font-face {

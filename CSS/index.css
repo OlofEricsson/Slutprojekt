@@ -48,6 +48,7 @@ a {
 
       text-decoration: none;
       color: white;
+      font-size: 2rem;
 
 }
 
@@ -80,6 +81,51 @@ a {
       font-weight: bolder;
 
 }
+
+/* hambgörgar meny */
+/* Kod baserat på exempel från tidigare i kursen */
+.menu{
+      height: 100vh;
+      width: 50vw;
+      background: rgb(0, 0, 0);
+      position: fixed;
+      top: 0;
+      left: -90vw;
+      transition: left 0.3s;
+      box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+      z-index: 10;
+}
+
+.menu-button{
+      cursor: pointer;
+      display: inline;
+}
+
+.menu-button i.material-icons{
+      font-size: 2.5rem;
+}
+
+.show{
+      left: 0;
+}
+
+.fade-layer{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      backdrop-filter: blur(0.3rem);
+      display: none;
+      z-index: 5;
+}
+
+.fade-layer.visible{
+      display: block;
+}
+
+
 
 #hero {
 
