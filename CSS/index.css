@@ -34,31 +34,6 @@ hr {
 
 }
 
-nav {
-
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-
-}
-
-a {
-
-      text-decoration: none;
-      color: white;
-      font-size: 2rem;
-
-}
-
-#linkbild {
-
-      height: 3rem;
-      margin-right: 2vw;
-
-}
-
 .navbar {
       
       font-family: Arial, Helvetica, sans-serif;
@@ -82,6 +57,21 @@ a {
       font-family: Arial, Helvetica, sans-serif;
       border: none;
       font-weight: bolder;
+
+}
+
+a {
+
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+
+}
+
+#linkbild {
+
+      height: 3rem;
+      margin-right: 2vw;
 
 }
 
@@ -209,6 +199,42 @@ main {
 }
 
 
+
+@media  (min-width: 700px) {
+
+      .fade-layer{
+            display: none;
+      }
+
+      .menu-button{
+            display: none;
+      }
+
+      
+      
+      .menu {
+            position: static;
+            width: auto;
+            height: auto;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            
+            align-items: center;
+      }
+      .navbar{
+
+            font-size: 1rem;
+      }
+
+      #linkbild {
+
+      height: 1.4rem;
+      margin-right: 0.5rem;
+      
+      }
+}
 
 
 @keyframes change {
