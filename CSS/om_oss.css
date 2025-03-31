@@ -15,7 +15,7 @@ header {
 
       margin-top: 0rem;
       text-align: center;
-
+ 
 }
 
 #title {
@@ -173,8 +173,8 @@ h3 {
 #Om_osstext{
 
       margin-top: 0px;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 3vw;
+      margin-right: 3vw;
       margin-bottom: 3rem;
       padding: 0.5rem;
       color: white;
@@ -186,6 +186,60 @@ h3 {
       line-height: 6vw;
       backdrop-filter: blur(0.3rem);
       background-color: rgba(0,0,0,0.5);
+
+}
+
+@media  (min-width: 700px) {
+
+      .fade-layer{
+            display: none;
+      }
+      .menu-button{
+            display: none;
+      }
+      .menu {
+            position: static;
+            width: auto;
+            height: auto;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            th
+            align-items: center;
+      }
+      .navbar{
+
+            font-size: 1rem;
+      }
+
+      #linkbild {
+
+      height: 1.4rem;
+      margin-right: 0.5rem;
+      
+      }
+      #Om_osstext {
+            font-size: 2rem;
+      }
+}
+
+@media (min-width: 1000px) {
+
+      h3 {
+
+            font-size: 5rem;
+
+      }
+      
+      #Om_osstext {
+            
+            margin-left: auto;
+            margin-right: auto;
+            width: 950px;
+            padding: 2rem;
+      }
+
 
 }
 
