@@ -38,9 +38,6 @@ nav {
 
       display: flex;
       justify-content: space-between;
-      padding: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
 
 }
 
@@ -48,19 +45,23 @@ a {
 
       text-decoration: none;
       color: white;
+      font-size: 2rem;
 
 }
 
 #linkbild {
 
-      height: 1rem;
+      height: 3rem;
       margin-right: 2vw;
 
 }
 
 .navbar {
-
+      
       font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 3rem;
+      margin: 1rem;
       /*
       border: 0.2rem solid white;
       border-radius: 1rem;
@@ -69,8 +70,8 @@ a {
       padding-left: 0.3rem;
       padding-right: 0.3rem;
       */
-      font-weight: bolder;
-
+      
+      
 }
 
 .navbar:hover {
@@ -79,6 +80,56 @@ a {
       border: none;
       font-weight: bolder;
 
+}
+
+/* hambgörgar meny */
+/* Kod baserat på exempel från tidigare i kursen */
+.menu{
+      height: 100vh;
+      width: minmax(auto, 50vw);
+      background: rgb(0, 0, 0);
+      position: fixed;
+      top: 0;
+      right: -90vw;
+      transition: Right 0.3s;
+      box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+}
+
+.menu-button{
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+}
+
+.menu-button i.material-icons{
+      font-size: 2.5rem;
+}
+
+.show{
+      right: 0;
+}
+
+.fade-layer{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      backdrop-filter: blur(0.3rem);
+      display: none;
+      z-index: 5;
+}
+
+.fade-layer.visible{
+      display: block;
 }
 
 main {
@@ -215,8 +266,35 @@ main {
       background: rgb(218,165,32);
 }
 
-@media  screen and (min-width: 1920px) {
+@media  (min-width: 700px) {
+
+      .fade-layer{
+            display: none;
+      }
+      .menu-button{
+            display: none;
+      }
+      .menu {
+            position: static;
+            width: auto;
+            height: auto;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            align-items: center;
+      }
+      .navbar{
+
+            font-size: 1rem;
+      }
+
+      #linkbild {
+
+      height: 1.4rem;
+      margin-right: 0.5rem;
       
+      }
 }
 
 @font-face {
