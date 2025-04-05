@@ -15,7 +15,7 @@ header {
 
       margin-top: 0rem;
       text-align: center;
-
+ 
 }
 
 #title {
@@ -132,146 +132,128 @@ a {
       display: block;
 }
 
+h2 {
+
+      color: white;
+      margin-left: 7rem;
+      margin-right: 7rem;
+      padding: 3rem;
+      text-align: center;
+      font-weight: bolder;
+      font-family: fancytext;
+      letter-spacing: 0.1rem;
+      background-color: rgb(20, 20, 20);
+
+
+}
+
 main {
 
       background-image: url(/MISC/blackmarble.png);
-      display: flex;
-      flex-direction: column;
 
 }
 
-/* sorting/filtrering: */
-
-#sortering {
-
-      padding-bottom: 1rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      backdrop-filter: blur(0.1rem);
-      background-color: rgba(0,0,0,0.5);
-
-}
-
-.sorteringcontainer {
-
-      color: white;
-      font-weight: bold;
-
-      display: block;
-      position: relative;
-      padding-left: 35px;
-      margin-bottom: 1rem;
-      cursor: pointer;
-      font-size: 22px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-
-}
-
-.sorteringcontainer input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-}
-
-.checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 25px;
-      width: 25px;
-      background-color: #eee;
-}
-
-.sorteringcontainer:hover input ~ .checkmark {
-      background-color: #ccc;
-}
-
-.sorteringcontainer input:checked ~ .checkmark {
-      background-color: rgb(255,215,0);
-}
-
-.checkmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-}
-
-.sorteringcontainer input:checked ~ .checkmark:after {
-      display: block;
-}
-
-.sorteringcontainer .checkmark:after {
-      left: 9px;
-      top: 5px;
-      width: 5px;
-      height: 10px;
-      border: solid white;
-      border-width: 0 3px 3px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-} 
-
-
-/* produkt kort: */
-
-.container {
-
-      display: grid;
-      backdrop-filter: blur(0.3rem);
-      background-color: rgba(0,0,0,0.5);
+.shopping-grid {
 
       overflow: auto;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+      display: grid;
+      grid-template-columns: repeat(minmax(200px, 1fr),auto-fit);
       gap: 1rem;
-      font-weight: bold;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      padding: 1rem;
+      padding: 2rem;
+      min-width: 300px;
+      max-width: 50%;
+      margin: 0 auto;
+  
+  }
+  
+  .card {
 
-}
-.card {
-      background: rgb(255, 255, 255);
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      color: rgb(0, 0, 0);
+      text-align: left;
+      backdrop-filter: blur(0.3rem);
+      background-color: rgba(0,0,0,0.5);
+  }
+  
+  .card h2 {
+      
+      font-size: 1.2rem;
+      color: black;
+      background-color: #ffffff;
+      margin: 0%;
+      padding: 0.5rem;
       text-align: center;
-      width: 200px;
-}
-.card img {
-      width: 100%;
-      filter: brightness(10%);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-.card h3 {
-      margin: 10px 0;
-      font-size: 18px;
-      color: rgb(218,165,32);
-}
-.card p {
-      font-size: 14px;
-      color: #666;
-}
-.card button {
-      background: rgb(255,215,0);
+  
+  }
+  
+  .card p {
+  
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      color: white;
+  
+  }
+  
+  #cart {
+      
+      text-align: right;
+      backdrop-filter: blur(0.3rem);
+      background-color: rgba(0,0,0,0.5);
+  }
+  
+  #cart h2 {
+      font-size: 1.2rem;
+      color: black;
+      background-color: #ffffff;
+      margin: 0%;
+      padding: 0.5rem;
+      text-align: center;
+  }
+  
+  #cart p {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  #status {
+  
+      text-align: left;
+      font-style: italic;
+  
+  }
+  
+  #sum {
+  
+      margin-top: 10rem;
+      margin-right: 1rem;
+  
+  }
+  
+  #PostCode {
+  
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+  
+  }
+  
+  button {
+      background-color: rgb(255,215,0);
       color: white;
       border: none;
-      padding: 10px;
-      border-radius: 0.1rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.2rem 1rem;
       cursor: pointer;
-      margin-top: 10px;
-      box-shadow: 0 0 1rem rgba(255, 215, 0, 0.4);
-}
-.card button:hover {
-      background: rgb(218,165,32);
-}
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  button:hover {
+      background-color: rgb(218,165,32);
+  }
 
 footer{
 
@@ -318,6 +300,9 @@ footer{
       margin-right: 0.5rem;
       
       }
+      #Om_osstext {
+            font-size: 2rem;
+      }
       footer{
 
             margin: 2rem;
@@ -334,18 +319,20 @@ footer{
 
 @media (min-width: 1000px) {
 
-      main {
+      h3 {
 
-            display: flex;
-            flex-direction: row;
+            font-size: 5rem;
+
+      }
       
+      #Om_osstext {
+            
+            margin-left: auto;
+            margin-right: auto;
+            width: 950px;
+            padding: 2rem;
       }
 
-      .container {
-
-            width: 100%;
-
-      }
 
 }
 
