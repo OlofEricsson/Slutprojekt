@@ -31,14 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     const categories = ["performance", "styling", "kolfiber", "OEM+"];
+    const categoryImages = {
+        "performance": "/MISC/performance.png",
+        "styling": "/MISC/styling.png",
+        "kolfiber": "/MISC/carbonfibreparts.png",
+        "OEM+": "/MISC/trippleclampcarbonfiber.png"
+    };
+
     container.innerHTML = "";
     
     for (let i = 1; i <= 20; i++) {
-        
         let category = categories[i % categories.length];
+        let imageUrl = categoryImages[category];
+
         let productHTML = `
             <div class="card" data-category="${category}">
-                <img src="/MISC/placeholder300.png" alt="Produkt ${i}">
+                <img src="${imageUrl}" alt="${category} Produkt ${i}">
                 <h3>Produkt ${i}</h3>
                 <p>Kategori: ${category}</p>
                 <button>Köp nu</button>
@@ -46,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         container.innerHTML += productHTML;
     }
+
 
     filterProducts();
     

@@ -241,11 +241,18 @@ main {
 
       width: 40vw;
       height: 200%;
-      filter: brightness(0.1);
+      filter: brightness(0.9);
       margin-left: 3vw;
       margin-right: 3vw;
       margin-bottom: min(3vw);
       margin-top: min(3vw);
+
+}
+
+#infobild1 {
+
+      z-index: 3;
+
 
 }
 
